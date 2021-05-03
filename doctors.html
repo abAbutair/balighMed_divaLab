@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/style-en.css">
+    <title>Doctors</title>
+</head>
+
+<body>
+
+<header>
+    <div class="head-bar">
+        <div class="container">
+            <div class="d-flex head-bar-content">
+                <!--<div class="contacts">
+                    <a href="#"><i class="fa fa-phone" aria-hidden="true"></i><span>707-505-8008</span></a>
+                    <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i><span>info@dr-essam.com</span></a>
+                </div>-->
+                <div class="lang">
+                    <form>
+                        <button class="btn current" type="button">English</button>
+                        <button class="btn" type="button">العربية</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="nb">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand res-logo" href="index.html"><img src="img/logo.png" alt="Logo"></a>
+                <button class="navbar-toggler" id="nav-icn" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav nav-justified">
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="index.html">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="clinic.html">clinic</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tests.html">service</a>
+                        </li>
+                        <li class="nav-item logo">
+                            <a class="nav-link" href="index.html"><img src="img/logo.png" alt="Logo"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tests.html">tests</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="doctors.html">doctors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sponsers-old.html">sponsers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-old.html">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- social -->
+<div class="social">
+    <ul>
+        <li class="f-color"><a href="#">facebook<i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li class="t-color"><a href="#">twitter<i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+        <li class="g-color"><a href="#">google plus<i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+        <li class="in-color"><a href="#">linkedin<i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+    </ul>
+</div>
+
+<div class="internals-back" style="background-image: url('img/internals-back.png')">
+    <div class="page">
+        <h1>doctors</h1>
+        <ul class="breadcrumb">
+            <li><a href="#">home</a></li>
+            <li>doctors</li>
+        </ul>
+    </div>
+</div>
+
+<div class="book-now-btn">
+    <a href="#" onclick="openBook()">book now</a>
+</div>
+<div class="book-now-fixed" id="bookNowFixed">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeBook()"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <div class="c-details-right">
+        <form>
+            <label for="bookNowName">Book now</label>
+            <input type="text" id="bookNowName" class="form-control name-phone mrr-res" placeholder="name">
+            <input type="text" class="form-control name-phone" placeholder="Phone">
+            <div class="fr-date">
+                <div class="form-group">
+                    <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" title=""/>
+                        <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fr-time">
+                <div class="form-group">
+                    <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" title=""/>
+                        <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
+                            <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <select class="form-control mrr-res" title="">
+                <option value="0">Department Name</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            <select class="form-control" title="">
+                <option value="0">select doctor</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            <textarea class="form-control" type="text" placeholder="Observation"></textarea>
+            <button class="btn btn-primary" type="submit">submit</button>
+        </form>
+    </div>
+</div>
+
+<section class="doctors">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="doc-list">
+                    <img src="img/doctors.png" alt="doctor">
+                    <div class="doc-info">
+                        <h2>Ahmed Morad</h2>
+                        <h3>Gastroenterology Consultant</h3>
+                        <p>Professor of gastrointestinal tract at Al-Qasr Al-Ain</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="doc-list">
+                    <img src="img/doctors.png" alt="doctor">
+                    <div class="doc-info">
+                        <h2>Ahmed Morad</h2>
+                        <h3>Gastroenterology Consultant</h3>
+                        <p>Professor of gastrointestinal tract at Al-Qasr Al-Ain</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="doc-list">
+                    <img src="img/doctors.png" alt="doctor">
+                    <div class="doc-info">
+                        <h2>Ahmed Morad</h2>
+                        <h3>Gastroenterology Consultant</h3>
+                        <p>Professor of gastrointestinal tract at Al-Qasr Al-Ain</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="doc-list">
+                    <img src="img/doctors.png" alt="doctor">
+                    <div class="doc-info">
+                        <h2>Ahmed Morad</h2>
+                        <h3>Gastroenterology Consultant</h3>
+                        <p>Professor of gastrointestinal tract at Al-Qasr Al-Ain</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="doc-list">
+                    <img src="img/doctors.png" alt="doctor">
+                    <div class="doc-info">
+                        <h2>Ahmed Morad</h2>
+                        <h3>Gastroenterology Consultant</h3>
+                        <p>Professor of gastrointestinal tract at Al-Qasr Al-Ain</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="doc-list">
+                    <img src="img/doctors.png" alt="doctor">
+                    <div class="doc-info">
+                        <h2>Ahmed Morad</h2>
+                        <h3>Gastroenterology Consultant</h3>
+                        <p>Professor of gastrointestinal tract at Al-Qasr Al-Ain</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="doc-list">
+                    <img src="img/doctors.png" alt="doctor">
+                    <div class="doc-info">
+                        <h2>Ahmed Morad</h2>
+                        <h3>Gastroenterology Consultant</h3>
+                        <p>Professor of gastrointestinal tract at Al-Qasr Al-Ain</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="doc-list">
+                    <img src="img/doctors.png" alt="doctor">
+                    <div class="doc-info">
+                        <h2>Ahmed Morad</h2>
+                        <h3>Gastroenterology Consultant</h3>
+                        <p>Professor of gastrointestinal tract at Al-Qasr Al-Ain</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- footer -->
+
+<footer>
+    <div class="get-in-touch" style="background-image:url('img/last-back.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 logo-low">
+                    <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+                    <article>Hammock talk come soon. They never said winning was easy. Some people can’t handle success, I can. Mogul talk. We the best. You see that bamboo behind me though, you see that bamboo? handle success, I can. Mogul talk. We the</article>
+                </div>
+                <form class="col-lg-9 form-group the-form">
+                    <label for="exampleInputEmail1">Get In Touch</label>
+                    <div class="row top-form">
+                        <div class="col-md">
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name">
+                        </div>
+                        <div class="col-md">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col-md">
+                            <input type="text" class="form-control" placeholder="Phone">
+                        </div>
+                    </div>
+                    <div class="row bottom-form">
+                        <div class="col">
+                            <textarea type="text" class="form-control" placeholder="Massage"></textarea>
+                        </div>
+                    </div>
+                    <button class="btn" type="submit">Send</button>
+                    <div class="res-social">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="rights"><p>All Rights Reserved . Developed by <a href="http://www.diva-lab.com/">Diva-lab.</a></p></div>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+<!--index-->
+<script src="js/owl.carousel.min.js"></script>
+
+<!--my script-->
+<script src="js/script.js"></script>
+
+</body>
+</html>

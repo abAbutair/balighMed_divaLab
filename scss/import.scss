@@ -1,0 +1,36 @@
+@import "variables";
+@import "mixins";
+@import "general";
+@import "header-footer";
+@import "main";
+@import "responsive";
+
+
+
+//fonts
+
+@font-face {
+  font-family: 'septime';
+  src: url('../fonts/Septime-font.ttf');
+}
+@font-face {
+  font-family: 'roboto-light';
+  src: url('../fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+  font-family: 'roboto-bold';
+  src: url('../fonts/Roboto-Bold.ttf');
+}
+@font-face {
+  font-family: 'roboto-medium';
+  src: url('../fonts/Roboto-Medium.ttf');
+}
+@font-face {
+  font-family: 'roboto-regular';
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: 'arabic-font';
+  src: url('../fonts/cocon-next-arabic.ttf');
+}
